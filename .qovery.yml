@@ -1,0 +1,16 @@
+---
+application:
+  name: "flowabot"
+  project: "test-bot-flowabot"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "fb"
+    size: "500"
+    type: "slow_hdd"
+    mount_point: "/mnt/fb"
+routers:
+- name: "main-flowabot"
+  routes:
+  - application_name: "flowabot"
+    paths:
+    - "/*"
