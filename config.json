@@ -1,5 +1,5 @@
 {
-  "prefix": "!",
+  "prefix": ".",
   "debug": true,
   "osu_cache_path": "/tmp/osumaps",
   "pp_path": "",
