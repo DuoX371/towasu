@@ -139,16 +139,14 @@ module.exports = {
                         percent = last_beatmap[msg.channel.id].fail_percent;
                         length = 4;
                     }
-                }else{
-                    if(arg.startsWith('http://') || arg.startsWith('https://')){
-                        beatmap_url = arg;
-                        beatmap_promise = osu.parse_beatmap_url(beatmap_url);
-                        beatmap_promise.then(response => {
-                            beatmap_id = response;
-                            if(!beatmap_id) custom_url = true;
-                        });
+                }else if(arg.startsWith('http://') || arg.startsWith('https://')){
+                    beatmap_url = arg;
+                    beatmap_promise = osu.parse_beatmap_url(beatmap_url);
+                    beatmap_promise.then(response => {
+                        beatmap_id = response;
+                        if(!beatmap_id) custom_url = true;
+                    });
 
-                    }
                 }
             });
 

@@ -318,13 +318,14 @@ client.on('ready', () => {
 			`Invite bot to server: ${chalk.blueBright('https://discord.com/api/oauth2/authorize?client_id='
 			+ config.credentials.discord_client_id + '&permissions=8&scope=bot')}`);
 
-		onMessage('!recent mrekk');
+		//onMessage('!recent mrekk');
+		/*
 		var minutes = 360, the_interval = minutes * 60 * 1000;
 		setInterval(function(){
 			log
 			onMessage('!recent mrekk');
 			console.log("6 hour check");
-		}, the_interval);
+		}, the_interval);*/
 
 
 });
